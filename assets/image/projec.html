@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id1">
+    <button onclick="getid()">swap</button>
+    <hr>
+    <p id="para"></p>
+    Enter your mobile number
+    <input type="number" id="qw">
+    <span id="error1"></span>
+    <button>
+        Save
+    </button>
+    <script>
+        function getid(){
+            var a=document.getElementById("id1").value;
+            document.getElementById("para").innerHTML=a; 
+        }
+        function myf(){
+            var a=document.getElementById("qw");
+            var b=document.getElementById("error1");
+            if(a.value.length>0){
+
+            }
+            else{
+                b.innerHTML="Mobile number is required";
+                b.style.borderColor="red";
+            }
+        }
+        console.log("result is"+myf(3,4));
+        document.getElementById("para").innerHTML=myf(12,3);
+
+    </script>
+</body>
+</html>

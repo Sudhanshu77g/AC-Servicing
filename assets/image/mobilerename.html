@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter your name
+    <input type="text" id="id1" />
+    <br /><br />
+    Enter your number
+    <input type="text" id="id2" />
+    <span id="error"></span>
+    <br /><br />
+    <button onclick="show()">Save</button>
+    <script>
+      function show() {
+        var a = document.getElementById("id2");
+        var err = document.getElementById("error");
+        if (a.value.length > 0) {
+          if (a.value.length == 10) {
+            var pattern = /^[0-9]+$/;
+            if (a.value.match(pattern)) {
+              err.innerHTML = "theek hai bhai";
+              a.style.borderColor = "green";
+            } else {
+              err.innerHTML = "arrei yaar";
+              a.style.borderColor = "red";
+            }
+          } else {
+            err.innerHTML = "Pura number do yaar";
+            a.style.borderColor = "red";
+          }
+        } else {
+          err.innerHTML = "Mobile number de dijiye";
+          a.style.borderColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

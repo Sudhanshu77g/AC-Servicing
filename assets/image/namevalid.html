@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter your name
+    <input type="text" id="id1" />
+    <span id="error"></span>
+    <br /><br />
+    <button onclick="show()">Save</button>
+    <script>
+      function show() {
+        var a = document.getElementById("id1");
+        var err = document.getElementById("error");
+
+        if (a.value.length > 0) {
+            if(a.value.length>= 8){
+                var pattern =/^[A-Za-z\s]+$/;
+                {
+                    if(a.value.match(pattern)){
+                        error.innerHTML= "";
+                        a.style.borderColor="green";
+                    }
+                    else{
+                        error.innerHTML= "Pattern not matched";
+                        a.style.borderColor="green";
+                    }
+                }
+            }
+            else{
+                error.innerHTML = "Name should have minimum 8 characters";
+                a.style.borderColor="red";
+            }
+        } 
+        else {
+          error.innerHTML = "Name is required field";
+          a.style.borderColor="red";
+        }
+      }
+    </script>
+  </body>
+</html>

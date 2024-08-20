@@ -1,0 +1,119 @@
+.al {
+    color: black;
+    font-style: bold;
+    font-family: "Poppins";
+    font-size:18px;
+    font-weight:600;
+}
+
+.al h2 {
+    font-family: "Poppins";
+    font-size: 68px;
+    line-height: 68px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.al p {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.d h5 {
+    color: rgb(17, 81, 129);
+    font-size: 16px;
+    line-height: 23px;
+    font-family: "Poppins";
+    letter-spacing: -0.5px;
+    font-weight:900;
+}
+
+
+.alb{
+    color:black;
+    font-size: 18px;
+}
+
+.d h3 {
+    font-family: "Poppins";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 900;
+}
+
+#yu {
+    padding-bottom: 20px;
+    padding-right: 400px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 27px;
+}
+
+#first {
+    background: rgb(239, 239, 239);
+    border-radius: 25px;
+    font-family: "Poppins";
+    font-size: 16px;
+    height: 50px;
+    border: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    padding-right: 30px;
+    padding-left: 32px;
+    width: 45%;
+}
+
+#second {
+    background: rgb(239, 239, 239);
+    border-radius: 25px;
+    font-family: "Poppins";
+    font-size: 16px;
+    height: 50px;
+    width: 45%;
+    border: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    padding-right: 30px;
+    padding-left: 32px;
+}
+
+#third {
+    background: rgb(239, 239, 239);
+    border-radius: 30px;
+    font-family: "Poppins";
+    font-size: 16px;
+    height: 100px;
+    border: none;
+    margin-bottom: 30px;
+    padding-top: 29px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 24px;
+    width: 95%;
+    text-align: start;
+}
+.ri{
+    font-size:40px;
+}
+.h{
+    font-size:25px; 
+    line-height:35px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media only screen and (max-width:767px) {
+    .h{
+        justify-content: center;
+    }
+}
